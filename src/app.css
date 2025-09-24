@@ -1,0 +1,166 @@
+@import "tailwindcss";
+.to-doContainer{
+   background-color: white;
+   margin-top: 10%;
+   border: 2px solid #fbae90;;
+   padding: 10px;
+   width: 30%;
+   height: 100%;
+   border-radius: 15px;
+   text-align: center;
+   margin-left: auto;
+   margin-right: auto;
+}
+.header{
+   display: flex;
+   align-items: center;
+   gap: 10px;
+   
+}
+.task-container {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;   
+  margin-bottom: 20px;
+  background-color: #e5e7eb;
+  border-radius: 9999px; 
+}
+
+.task-input {
+  background-color: transparent; 
+  border: 0; 
+  outline: none; 
+  flex: 1; 
+  height: 3.5rem;
+  padding-left: 1.5rem; 
+  padding-right: 0.5rem; 
+  font-size: 20px; 
+  color: #000; 
+}
+
+.task-input::placeholder {
+  color: #475569; 
+}
+
+.task-button {
+  border: none; 
+  border-radius: 9999px; 
+  background-color: #ea580c; 
+  width: 8rem;
+  height: 3.5rem; 
+  color: #fff; 
+  font-size: 20px; 
+  font-weight: 500; 
+  cursor: pointer; 
+}
+.task-item {
+  display: flex;              
+  align-items: center;        
+  margin-top: 20px;        
+  margin-bottom: 20px;
+  gap: 2px;              
+}
+
+.task-content {
+  display: flex;              
+  flex: 1;                   
+  align-items: center;        
+  cursor: pointer;            
+}
+
+.tick-icon {
+  width: 4%;  
+  margin-left: 4%;
+ 
+
+}
+
+.task-text {
+  color: #050505;             
+  margin-left: 5%;          
+  font-size: 20px; 
+  font-weight: 600;    
+        
+}
+
+.decoration{
+  text-decoration: line-through;
+  
+
+}
+.colorChange{
+  color: blue;
+}
+
+.delete-icon {
+  width: 4%;            
+  cursor: pointer;  
+  margin-right: 10%;          
+}
+
+/* Navbar CSS */
+.navbar{
+  background-color: black;
+  padding: 10px;
+  margin-top: 1%;
+  height:88px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.line{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  margin-left:auto;
+  margin-right: auto;
+  gap:5%;
+    
+
+}
+
+.Nav-Link{
+ font-style: "Product Sans";
+ position: relative;
+ color: white;
+ outline: none;
+ font-size: 20px;
+ cursor: pointer;
+ font-weight: bold;
+ 
+ 
+}
+.rightSide{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap:30px;
+  margin-right: 2%;
+  
+}
+
+
+
+.logo{
+  margin-left: 2%;
+
+
+}
+
+.Nav-Link::after{
+  content: '';
+  position: absolute;
+  bottom: -5px;   
+  left: 0;
+  width: 0%;
+  height: 5px;
+  background-color: white;
+  transition: width 0.3s ease-in-out;
+  
+}
+
+.Nav-Link:hover::after{
+  width: 100%;    
+}
