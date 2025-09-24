@@ -101,8 +101,7 @@
 /* Navbar CSS */
 .navbar{
   background-color: black;
-  padding: 10px;
-  margin-top: 1%;
+  padding: 16px 24px 16px 24px;
   height:88px;
   border-radius: 15px;
   display: flex;
@@ -116,7 +115,7 @@
   width: 50%;
   margin-left:auto;
   margin-right: auto;
-  gap:5%;
+  gap:12px;
     
 
 }
@@ -136,15 +135,17 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap:30px;
-  margin-right: 2%;
+  gap:24px;
+ 
   
 }
 
 
 
 .logo{
-  margin-left: 2%;
+  
+  width:121px;
+  height: 56px;
 
 
 }
@@ -163,4 +164,21 @@
 
 .Nav-Link:hover::after{
   width: 100%;    
+}
+
+.rightSide1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.downarrow{
+  width:25px;
+  height: 25px;
+}
+.profile{
+  width: 50px;
+  height: 50px;
+  
 }

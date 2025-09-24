@@ -23,9 +23,11 @@ function Navbar() {
                     <Link to="" className="Nav-Link">Contact Us</Link>
                 </div>
                 <div className="rightSide">
-                    <img src="brightness.png" alt="user" className="brightness" />
-                    <img src="profile.png" alt="profile" className="profile" />
-                    <img src="downarrow.png" alt="downarrow" className="arrow" />
+                  <img src="brightness.png" alt="user" className="brightness" />
+                    <div className="rightSide1">
+                     <img src="profile.png" alt="profile" className="profile" />
+                     <img src="downarrow.png" alt="downarrow" className="arrow" />
+                   </div>
                 </div>
 
             </div>
