@@ -17,7 +17,7 @@ function YoutubeNavbar() {
                 </div>
                 <div className="y-mid">
                     <div className="searchbar">
-                        <input type="text" placeholder="Search" className="search-input" />  {/* Inputref is used to get input filed text*/}
+                        <input type="text" placeholder="Search" className="search-input" />
                         <button className="search-button"><IoSearchOutline style={{ marginLeft: '20px', color: 'white', width: '25px', height: '25px' }} /></button>
 
                     </div>
@@ -27,18 +27,25 @@ function YoutubeNavbar() {
                 </div>
 
 
-
-
                 <div className="y-right">
                     <div className="createbutton">
                         <IoAdd style={{ color: 'white', width: '22px', height: '22px' }} />
                         <h3 style={{ color: 'white', fontWeight: 'bold' }}>Create</h3>
                     </div>
 
-                    <IoNotificationsOutline style={{ color: 'white', width: '25px', height: '25px' }} />
+                    <div style={{ position: 'relative' , display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                        <IoNotificationsOutline style={{ color: 'white', width: '25px', height: '25px' }} />
+                        <div className="notify">
+                            <h3 style={{ textAlign: 'center', alignContent: 'center',padding:'2px', color: 'white', fontSize: '6px', fontWeight: 'bold' }} >5+</h3>
+                        </div>
+                    </div>
+
                     <img src="profile.png" alt="profile" className="yprofile" />
+
                 </div>
             </div>
+
+
         </>
     )
 }

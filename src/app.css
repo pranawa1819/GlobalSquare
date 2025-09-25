@@ -265,7 +265,7 @@ input {
   background-color: black;
   padding: 16px 24px 16px 24px;
   height:88px;
-  border-radius: 15px;
+  
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -280,7 +280,7 @@ input {
 .ylogo{
   width:121px;
   height: 76px;
-  min-width: 30px;
+  min-width: 100px;
 }
 
 .y-mid{
@@ -374,6 +374,20 @@ input {
   justify-content: center;
 }
 
+.notify{
+  border: none; 
+  border-radius: 15px; 
+  background-color: red; 
+  width:14px;
+  height:14px;
+  color: #fff; 
+  font-size: 20px; 
+  font-weight: 500; 
+  cursor: pointer; 
+  justify-content: center;
+  margin-top: -12px;
+  margin-left: -12px;
+}
 
 
 
@@ -425,8 +439,6 @@ input {
   .searchbar {
     width: 90px;
   }
-  .y-left{
-    width:120px;
-  }
+  
 }
  
