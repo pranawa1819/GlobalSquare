@@ -9,7 +9,7 @@ function Navbar() {
     return (
         <>
             <div className="navbar">
-
+              
                 <img src="logo.png" alt="logo" className="logo" />
                 
                 <div className="line">
@@ -19,7 +19,7 @@ function Navbar() {
                         <MdOutlineKeyboardArrowDown style={{color: 'white'}}/>
 
                     </div>
-                    <Link to="" className="Nav-Link">Forum</Link>
+                    <Link to="/Simpleform" className="Nav-Link">Forum</Link>
                     <Link to="" className="Nav-Link">Contact Us</Link>
                 </div>
                 <div className="rightSide">

@@ -1,4 +1,6 @@
 @import "tailwindcss";
+
+/*todo list css*/
 .to-doContainer{
    background-color: white;
    margin-top: 10%;
@@ -140,8 +142,6 @@
   
 }
 
-
-
 .logo{
   
   width:121px;
@@ -181,4 +181,232 @@
   width: 50px;
   height: 50px;
   
+}
+
+/* Form CSS */
+
+
+form {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 40px;
+  width: 500px;
+  margin: 5% auto;            
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+  border-radius: 15px;
+  gap: 10px;
+}
+
+label {
+  color: rgba(20, 20, 20, 0.85);
+  text-transform: uppercase;
+  font-size: 16px;
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+input {
+  background-color: transparent; 
+  border: 1px solid black; 
+  border-radius: 10px;
+  outline: none; 
+  padding: 10px;
+  font-size: 16px; 
+  color: #000; 
+  align-content: center;
+}
+
+.gender-group {
+  display: flex;
+  gap: 10px;
+  margin-top: 8px;
+  align-items: center;
+  font-size: 16px;
+}
+
+.gender-group label {
+  font-size: 16px;
+  text-transform: none;
+  
+}
+
+.gender-group input {
+  background: rgba(255, 255, 255, 0.6);
+  height: 25px;
+  width: 25px;
+  border-radius: 8px;
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  font-size: 16px;
+}
+
+.task-button1 {
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  height: 45px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.task-button1:hover {
+  background: #0056b3;
+  box-shadow: 0px 4px 12px rgba(0, 123, 255, 0.4);
+}
+
+/* youtube Navbar CSS */
+.y-navbar{
+  background-color: black;
+  padding: 16px 24px 16px 24px;
+  height:88px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.ylogo{
+  width:121px;
+  height: 76px;
+}
+.y-left{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap:10px;
+}
+.y-mid{
+  display: flex;
+  
+  gap:15px;
+}
+.searchbar {
+  display: flex;
+  align-items: center;
+  margin:0px,0px,0px,32px;   
+  padding: 0px,4px,0px,16px;
+  background-color: rgb(18,18,18);
+  border-radius: 30px; 
+  border: 0px solid rgb(33,33,33);
+  width:536px;
+  height:40px;
+  overflow: hidden;
+}
+
+.search-input {
+  background-color: transparent; 
+  border: none; 
+  outline: none; 
+  flex: 1; 
+  height: 3.5rem;
+  padding-left: 1.5rem; 
+  padding-right: 0.5rem; 
+  font-size: 20px; 
+  color: white; 
+  flex: 1;
+}
+
+.search-input::placeholder {
+  color: rgb(117,117,117); 
+}
+
+.search-button {
+  border: none; 
+  background-color: rgb(34,34,34); 
+  width:64px;
+  height:40px;
+  color: #fff; 
+  font-size: 20px; 
+  font-weight: 500; 
+  cursor: pointer; 
+  justify-content: center;
+  align-items: center ;
+  flex-shrink: 0;
+   
+}
+.createbutton{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(18,18,18);
+  border-radius: 30px; 
+  border: 0px solid rgb(33,33,33);
+  overflow: hidden;
+  gap:5px;
+  width:97.18px;
+  height:36px;
+  padding:10px;
+}
+
+.y-right{
+  display:flex;
+  gap:30px;
+  align-items: center;
+  justify-content: center;
+  
+
+}
+.yprofile{
+  width: 32px;
+  height: 32px;
+  
+}
+
+.mic-icon{
+  border: none; 
+  border-radius: 9999px; 
+  background-color: rgb(34,34,34); 
+  width:40px;
+  height:40px;
+  color: #fff; 
+  font-size: 20px; 
+  font-weight: 500; 
+  cursor: pointer; 
+  justify-content: center;
+}
+
+
+
+
+
+@media screen and (max-width: 1145px) {
+  .searchbar {
+    width: 325px; 
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .searchbar {
+    width: 320px; 
+  }
+
+  
+}
+
+@media screen and (max-width: 825px) {
+  .searchbar {
+    width: 255px;
+  }
+
+
+}
+
+@media screen and (max-width: 767px) {
+  .searchbar {
+    width: 190px;
+  }
+
+
+}
+
+
+@media screen and (max-width: 675px) {
+  .searchbar {
+    display: none; 
+  }
 }
