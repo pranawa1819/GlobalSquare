@@ -270,16 +270,19 @@ input {
   align-items: center;
   justify-content: space-between;
 }
-.ylogo{
-  width:121px;
-  height: 76px;
-}
+
 .y-left{
   display: flex;
   align-items: center;
   justify-content: center;
   gap:10px;
 }
+.ylogo{
+  width:121px;
+  height: 76px;
+  min-width: 30px;
+}
+
 .y-mid{
   display: flex;
   
@@ -296,6 +299,7 @@ input {
   width:536px;
   height:40px;
   overflow: hidden;
+ 
 }
 
 .search-input {
@@ -308,7 +312,7 @@ input {
   padding-right: 0.5rem; 
   font-size: 20px; 
   color: white; 
-  flex: 1;
+  min-width: 30px;
 }
 
 .search-input::placeholder {
@@ -326,7 +330,7 @@ input {
   cursor: pointer; 
   justify-content: center;
   align-items: center ;
-  flex-shrink: 0;
+  
    
 }
 .createbutton{
@@ -390,7 +394,7 @@ input {
 
 @media screen and (max-width: 825px) {
   .searchbar {
-    width: 255px;
+    width: 225px;
   }
 
 
@@ -400,13 +404,29 @@ input {
   .searchbar {
     width: 190px;
   }
-
+ 
 
 }
 
 
 @media screen and (max-width: 675px) {
+  .y-mid {
+    width:190px; 
+  }
   .searchbar {
-    display: none; 
+    width: 120px;
   }
 }
+
+@media screen and (max-width: 600px) {
+  .y-mid {
+    width:140px; 
+  }
+  .searchbar {
+    width: 90px;
+  }
+  .y-left{
+    width:120px;
+  }
+}
+ 
