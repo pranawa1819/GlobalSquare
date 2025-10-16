@@ -390,7 +390,7 @@ input {
 }
 
 
-
+/*
 
 @media screen and (max-width: 1145px) {
   .searchbar {
@@ -441,4 +441,49 @@ input {
   }
   
 }
+  */
+/*
+html, body {
+	height: 100%;
+  background-color: #ffffff;
+  text-align: center;
+  margin: 0;
+}
+
+* {
+	font-family: Helvetica, Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+#app {
+	position: relative;
+	height: 100%;
+	width: 100%;
+	padding: 4px;
+}
+
+div {
+  padding: 20px 0 0;
+  heig
+  */
+.buttonStyle{
+  width: 120px;
+  height: 50px;
+  border: 1px solid Black;
+  border-radius: 5px;
+}
+
+.colorChange{
+  color: green;
+}
+
+body {
+  height:20vh; 
+	margin:0;
+ /* background-color: #FFA500;*/
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  
  
+}

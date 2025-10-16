@@ -5,7 +5,7 @@ import App from './App.jsx'
 import './app.css'
 
 createRoot(document.getElementById('root')).render(
-  <StrictMode>
+  <StrictMode> {/*It console log twice */}
     <BrowserRouter>
       <App />
     </BrowserRouter>
