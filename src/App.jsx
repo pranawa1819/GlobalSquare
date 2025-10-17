@@ -1,177 +1,134 @@
-import React from 'react';
-import { useState } from 'react';
-import { Routes, Route } from "react-router-dom";
+import React, { useState } from 'react';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import './app.css'
-import ToDoList from './Components/ToDo';
+import HeaderAll from './Components/headerAll';
+import ToDoLists from './Components/ToDo';
 import Example from './Components/Example';
-import Navbar from './Components/navbar';
-import Simpleform from './Components/Simpleform';
-import YoutubeNavbar from './Components/YoutubeNavbar';
+import NavRouting from './Components/navRoutes';
+import YNavRouting from './Components/youTubeNav';
 import TailwindCssExample from './Components/TailwindCssExample';
 import BasicReact from './Components/BasicReact';
 import ToDoUsingTailWind from './Components/ToDoUsingTailWind';
-import Task from './Components/Task';
+import Simpleform from './Components/Simpleform';
 import UseEffectTask from './Components/UseEffectTask';
 import StopWatch from './Components/StopWatch';
-import ButtonComponent from './Components/buttonComponents'
-import ApiExample from './Components/APIExample';
+import ButtonComponent from './Components/buttonComponents';
 import AgePredictor from './Components/AgePredict';
+import ApiExample from './Components/APIExample';
 import ExcuseGenerator from './Components/ExcuseGenerator';
-import DataFetch from './Components/TableApi';
 import RandomUser from './Components/RamdomUser';
-
+import DataFetch from './Components/TableApi';
 import Header from './Component/header';
-import Profile from './Component/profile';
-import Contact from './Component/contact';
+import ContextExample from './Component/Context';
+import PropsDrilling from './Component/PropsDrilling';
 import Home from './Component/home';
-import Hi from './Component/hi';
+import Profile from './Component/profile';
+import Practice2 from './Components/practice2';
 
-import {createContext} from "react";
 
-export const AppContext = createContext();
 
 function App() {
-/*
-  const [name, Setname] = useState(1);
-
-  useEffect(() => {
-    Setname(name + 1);
-    console.log("Component mounted");
-  }, [name]);
-  console.log("pranawa");
-  */
-
+  /*
+    const [name, Setname] = useState(1);
   
-  const [username, setUserName] = useState("pranawa");
+    useEffect(() => {
+      Setname(name + 1);
+      console.log("Component mounted");
+    }, [name]);
+    console.log("pranawa");
+    */
+
+   const [username, setUserName] = useState("pranawa");
   return (
     <>
-      {/*
-       <Routes>
-         <Route
-           path="/"
-           element={
-             <> 
-               <div className='main'>
-                 <Navbar />
-                
-       
-                </div>
-              </>
-            }
-          />
-           <Route
-           path="/Simpleform"
-           element={
-             <> 
-               <div className='main'>
-                 <Navbar />
-                <Simpleform />
-       
-                </div>
-              </>
-            }
-          />
-        </Routes>
-     </>
-    */}
-
-      {/*}
-     <Routes>
-        <Route
-         path="/"
-          element={
-            <> 
-             <YoutubeNavbar />
-              
-            </>
-          }
-        />
+     <HeaderAll />
+      
+      <Routes>
+        <Route path="/ToDo"element={<><ToDoLists /></>} />
       </Routes>
-    
-    */}
-      {/* <Example /> */}
 
-      {/*
-    <BasicReact name="Pranawa" age={21} email ="pranawakc187@gmail.com" />
-    <BasicReact name="Sita" age={29}  email ="sita12@gmail.com" />
-    <BasicReact name="Gita" age={15}  email ="gita123@gmail.com" />
-    */}
-      {/*
-    <BasicReact salary={90000} position = "Senior SDE" company="Amazon" />
-    <BasicReact salary={12000} position = "Junior SDE" company="Google" />
-    <BasicReact salary={10000} position = "Project Manager" company="Netflix" />
-    */}
-      {/*
-    <BasicReact />
-    */}
-      {/*
-    <ToDoUsingTailWind />
-     */}
+      <Routes>
+        <Route path="/Example" element={<> <Example /></>} />
+      </Routes>
 
-    {/*<ButtonComponent />*/}
-    {/*<ApiExample />*/}
+      <Routes>
+        <Route path="/navRoutes" element={<><NavRouting /></>} />
+      </Routes>
 
-    {/*<AgePredictor />*/}
+      <Routes>
+        <Route path="/youTubeNav" element={<><YNavRouting /></>} />
+      </Routes>
 
-    {/*<ExcuseGenerator />*/}
-    {/*<DataFetch />*/}
+      <Routes>
+        <Route path="/TailwindCssExample" element={<><TailwindCssExample /></>} />
+      </Routes>
 
-   { /*
-    <Routes>
-         <Route
-           path="/"
-           element={
-             <> 
-               <div className='main'>
-                 <Header />
-                </div>
-              </>
-            }
-          />
-           <Route
-           path="/home"
-           element={
-             <> 
-               <div className='main'>
-                 <Header />
-                 <Home name={username}/>
-                </div>
-              </>
-            }
-          />
-           <Route
-           path="/profile"
-           element={
-             <> 
-               <div className='main'>
-                 <Header />
-                 <Profile name={username} newName={setUserName}/>
-       
-                </div>
-              </>
-            }
-          />
-          <Route
-           path="/contact"
-           element={
-             <> 
-               <div className='main'>
-                 <Header />
-                 <Contact />
-       
-                </div>
-              </>
-            }
-          />
-        </Routes>
-     
-     */}
-     <AppContext.Provider value={{username }}>
-       <Hi />
+      <Routes>
+        <Route path="/practice2" element={<><Practice2 /></>} />
+      </Routes>
 
-     </AppContext.Provider>
+      <Routes>
+        <Route path="/BasicReact" element={<><BasicReact /> </>} />
+      </Routes>
 
-   </>
+      <Routes>
+        <Route path="/ToDoUsingTailWind" element={<><ToDoUsingTailWind /></>} />
+      </Routes>
+
+      <Routes>
+        <Route path="/Simpleform" element={<><Simpleform /></>} />
+      </Routes>
+
+      <Routes>
+        <Route path="/UseEffectTask" element={<><UseEffectTask /></>} />
+      </Routes>
+
+      <Routes>
+        <Route path="/StopWatch" element={<><StopWatch /></>} />
+      </Routes>
+
+      <Routes>
+        <Route path="/buttonComponents" element={<><ButtonComponent /></>} />
+      </Routes>
+
+      <Routes>
+        <Route path="/AgePredict" element={<><AgePredictor /></>} />
+      </Routes>
+
+      <Routes>
+        <Route path="/APIExample" element={<><ApiExample /></>} />
+      </Routes>
+
+      <Routes>
+        <Route path="/ExcuseGenerator" element={<><ExcuseGenerator /></>} />
+      </Routes>
+
+      <Routes>
+        <Route path="/RandomUser" element={<><RandomUser /></>} />
+      </Routes>
+
+      <Routes>
+        <Route path="/TableApi" element={<><DataFetch /></>} />
+      </Routes>
+
+      <Routes>
+        <Route path="/PropsDrilling" element={<><PropsDrilling /></>} />
+        <Route path="/home" element={<><Header /><Home name={username}/></>} />
+        <Route path="/profile" element={<><Header /><Profile name={username} newName={setUserName} /></>} />
+      </Routes>
+
+      
+      <Routes>
+        <Route path="/Context" element={<><ContextExample /></>} />
+      </Routes>
+      
+
+
+
+
+
+    </>
+
   )
 }
 

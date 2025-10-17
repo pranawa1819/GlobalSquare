@@ -1,10 +1,10 @@
 import React, { useEffect } from "react";
-import { useRef, useState } from 'react'
+import { useState } from 'react'
 import '../app.css'
 import ToDoItem from '../Components/ToDoItems';
 
 
-function ToDoList() {
+function ToDoLists() {
     const [todolist, setTodolist] = useState(localStorage.getItem("todos") ? JSON.parse(localStorage.getItem("todos")) : []);
     const inputRef = useState("null");
     
@@ -71,4 +71,4 @@ function ToDoList() {
     )
 }
 
-export default ToDoList;
+export default ToDoLists;

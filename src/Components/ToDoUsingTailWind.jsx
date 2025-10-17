@@ -77,7 +77,7 @@ function ToDoUsingTailWind() {
                 </div>
 
                 <div className="ml-11 mr-11 mt-5 mb-5 justify-center bg-amber-50 ">
-                    {todolist.map((task, index) =>
+                    {todolist.map((task) =>
                         <div className="flex justify-between px-[24px] py-[16px] w-2xl">
                             <div className="flex ">
                                 {/*<img src={task.iscompleted ? "/tick.png" : "/not_tick.png"} alt="" className="w-8 h-8 " onClick={() => complete(task.id)} />*/}

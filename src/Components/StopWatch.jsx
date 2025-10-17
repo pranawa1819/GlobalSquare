@@ -24,7 +24,7 @@ function StopWatch() {
     
     return (
 
-        <div className=" flex flex-col justify-around items-center border-2 border-amber-500 round bg-yellow-500  w-175 h-150">
+        <div className=" flex flex-col justify-around text-center items-center border-2 border-amber-500 round bg-yellow-500  w-175 h-150 mt-60  ml-auto mr-auto">
             <h1 className="text-5xl font-bold font-serif ">Stop Watch</h1>
             <h1 className="text-8xl font-bold ">0:0:{count}</h1>
             <button onClick={handleClick}>

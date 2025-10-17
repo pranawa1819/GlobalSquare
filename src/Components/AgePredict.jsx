@@ -1,5 +1,5 @@
 import React from "react";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Axios from 'axios';
 import '../app.css'
 
@@ -20,7 +20,8 @@ function AgePredictor() {
 
     return (
         <>
-            <div className=" flex flex-col justify-evenly  bg-purple-200 w-130 h-100 items-center">
+            <div className=" flex flex-col justify-evenly  bg-purple-200 w-130 h-100 items-center mt-60  ml-auto mr-auto">
+                <h1 className="text-2xl font-bold font-serif  ">Predict Your Age</h1>
                 <div>
                     <input type="text" placeholder="Enter your name" value={name} onChange={(e) => setName(e.target.value)} className="border-2 border-gray-700 px-8 py-2 mr-5  bg-gray-100" />
                     <button onClick={handleClick} className="border-2  text-center  border-purple-500 px-6 py-3 rounded-2xl bg-purple-600 text-white hover:bg-purple-700 font-bold">Predict Age</button>

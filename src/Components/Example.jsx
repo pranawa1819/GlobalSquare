@@ -1,5 +1,5 @@
-import React, { use } from 'react';
-import { useRef, useState } from 'react';
+import React from 'react';
+import { useState } from 'react';
 import { sculptureList } from './data.js';
 import '../app.css'
 
@@ -119,23 +119,8 @@ function Example() {
             {/*<p >{even}</p>*/}
 
 
-            {/*
-            <div style={divStyle}>
-                <p>The color is {color}</p>
-                <button className='buttonStyle' onClick={() => setColor('Aquamarine')}>
-                    Aquamarine
-                </button>
-                <button className='buttonStyle' onClick={() => setColor('BlueViolet')}>
-                    BlueViolet
-                </button>
-                <button className='buttonStyle' onClick={() => setColor('Chartreuse')}>
-                    Chartreuse
-                </button>
-                <button className='buttonStyle' onClick={() => setColor('CornflowerBlue')}>
-                    CornflowerBlue
-                </button>
-            </div>
-            */}
+
+
 
 
             {/*
@@ -169,6 +154,21 @@ function Example() {
 
             */}
 
+            <div style={divStyle} className='flex flex-col justify-around items-center mt-10  ml-auto mr-auto w-100 '>
+                <p>The color is {color}</p>
+                <button className='buttonStyle' onClick={() => setColor('Aquamarine')}>
+                    Aquamarine
+                </button>
+                <button className='buttonStyle' onClick={() => setColor('BlueViolet')}>
+                    BlueViolet
+                </button>
+                <button className='buttonStyle' onClick={() => setColor('Chartreuse')}>
+                    Chartreuse
+                </button>
+                <button className='buttonStyle' onClick={() => setColor('CornflowerBlue')}>
+                    CornflowerBlue
+                </button>
+            </div>
 
             <form >
                 <input

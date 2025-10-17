@@ -1,7 +1,7 @@
 import React from "react";
 import '../app.css'
 import { useContext } from "react";
-import {AppContext} from '../App';
+import {AppContext} from './Context';
 
 function Hello(){
     const {username} = useContext(AppContext);

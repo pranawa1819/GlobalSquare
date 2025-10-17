@@ -477,13 +477,3 @@ div {
   color: green;
 }
 
-body {
-  height:20vh; 
-	margin:0;
- /* background-color: #FFA500;*/
-  display: flex;
-  justify-content: center; 
-  align-items: center;
-  
- 
-}
